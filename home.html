@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Raaga - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="Ranod (1).png" alt="Random Raaga">
+    <h1>Random Raaga</h1>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Playlists</a></li>
+    <li><a href="#">Search</a></li>
+    <li><a href="#">Profile</a></li>
+    <li>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+      <span id="theme-label">Light Mode</span>
+    </li>
+  </ul>
+</nav>
+
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <ul>
+      <li><i class="fa-solid fa-house i-tags"></i><a href="#">  Home</a></li>
+      <li><i class="fa-solid fa-bookmark i-tags"></i> <a href="#">Your Library</a></li>
+      <li><i class="fa-solid fa-music i-tags"></i> <a href="#">Playlists</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    <section class="welcome-section">
+      <h1>Welcome to Random Raaga</h1>
+      <p>Your favorite music hub</p>
+    </section>
+
+    <!-- Mood-Based Playlist Generator -->
+    <section class="mood-playlist-generator">
+      <h2>Generate a Playlist Based on Your Mood</h2>
+      <div class="mood-selection">
+        <label for="mood">Select Your Mood:</label>
+        <select id="mood">
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="calm">Calm</option>
+          <option value="energetic">Energetic</option>
+        </select>
+        <button id="generate-playlist">Generate Playlist</button>
+      </div>
+      <div id="generated-playlist" class="generated-playlist">
+        <!-- Playlist will be displayed here after generation -->
+      </div>
+    </section>
+
+    <section class="featured-playlists">
+      <h2>Featured Playlists</h2>
+      <div class="playlists">
+        <div class="playlist">
+          <img src="top.png" alt="Playlist 1">
+          <p>Top Hits</p>
+        </div>
+        <div class="playlist">
+          <img src="chillvibes.png" alt="Playlist 2">
+          <p>Chill Vibes</p>
+        </div>
+        <div class="playlist">
+          <img src="classic.png" alt="Playlist 3">
+          <p>Classic Raaga</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="recently-played">
+      <h2>Recently Played</h2>
+      <div class="track-list">
+        <div class="track">
+          <img src="song1.png" alt="Track 1">
+          <p>Track Title 1</p>
+        </div>
+        <div class="track">
+          <img src="song2.png" alt="Track 2">
+          <p>Track Title 2</p>
+        </div>
+        <div class="track">
+          <img src="song3.png" alt="Track 3">
+          <p>Track Title 3</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Music Player Control Bar -->
+  <footer class="music-control-bar">
+    <div class="controls">
+      <i class="fa-solid fa-pause control-icon"></i>
+      <i class="fa-solid fa-play control-icon"></i>
+      <i class="fa-solid fa-forward control-icon"></i>
+    </div>
+    <div class="track-info">
+      <p>Track Name - Artist</p>
+    </div>
+    <div class="volume-control">
+      <i class="fa-solid fa-volume-high " ></i>
+      <input type="range" min="0" max="100" class="volume-slider">
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+
+</html>

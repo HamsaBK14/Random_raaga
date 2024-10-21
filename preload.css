@@ -1,0 +1,93 @@
+/* Body and background styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #1c1c1c);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevents page scroll during preload */
+  }
+  
+  /* Preloader styles */
+  .preloader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .preloader h1 {
+    font-size: 4rem;
+   
+    color: #ffffff;
+    display: flex;
+    font-family: OCR A Std, monospace;
+  }
+  
+  /* Random text animation */
+  .random {
+    position: relative;
+    left: -100%;
+    animation: slideInRandom 0.5s forwards;
+  }
+  
+  /* Raaga text animation */
+  .raaga {
+    position: relative;
+    left: -100%;
+    animation: slideInRaaga 1.5s forwards;
+    font-weight: bold;
+  }
+  
+  /* Keyframes for Random text */
+  @keyframes slideInRandom {
+    to {
+      left: 0;
+    }
+  }
+  
+  /* Keyframes for Raaga text */
+  @keyframes slideInRaaga {
+    to {
+      left: 0;
+    }
+  }
+  
+  /* Headphone image styling */
+  .headphones {
+    max-width: 500px;
+    height: 500px;
+    position: relative;
+    
+    animation: fadeInHeadphones 1s ease-in-out;
+  }
+  
+  /* Keyframes for headphone image */
+  @keyframes fadeInHeadphones {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  /* Homepage styles */
+#homepage {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Homepage title and description sliding animation */
+.homepage-title, .homepage-description {
+    font-size: 3rem;
+    color: #000;
+    margin: 10px;
+}

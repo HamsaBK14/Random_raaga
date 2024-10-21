@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Raaga - Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Ranod (1).png" alt="Random Raaga">
+      <h1>Random Raaga</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Playlists</a></li>
+      <li><a href="#">Search</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <ul>
+      <li><i class="fa-solid fa-house i-tags"></i><a href="#">  Home</a></li>
+      <li><i class="fa-solid fa-bookmark i-tags"></i> <a href="#">Your Library</a></li>
+      <li><i class="fa-solid fa-music i-tags"></i> <a href="#">Playlists</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Profile Content -->
+  <main class="profile-content">
+    <section class="profile-header">
+      <div class="profile-info">
+        <img src="gaganv.png" alt="User Avatar" class="profile-avatar">
+        <div>
+          <h1>Gagan V</h1>
+          <button class="btn-edit" onclick="window.location.href='edit-profile.html'">Edit Profile</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-playlists">
+      <h2>Playlists</h2>
+      <div class="playlists-grid">
+        <div class="playlist-card">
+          <img src="chillvibes.png" alt="Playlist Cover">
+          <p>Chill Vibes</p>
+        </div>
+        <div class="playlist-card">
+          <img src="top.png" alt="Playlist Cover">
+          <p>Top Hits</p>
+        </div>
+        <div class="playlist-card">
+          <img src="classic.png" alt="Playlist Cover">
+          <p>Classic Raaga</p>
+        </div>
+        <div class="playlist-card">
+          <img src="workout.png" alt="Playlist Cover">
+          <p>Work Out</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-recently-played">
+      <h2>Recently Played</h2>
+      <div class="recently-played-grid">
+        <div class="track">
+          <img src="song1.png" alt="Track">
+          <p>Track Title 1</p>
+        </div>
+        <div class="track">
+          <img src="song2.png" alt="Track">
+          <p>Track Title 2</p>
+        </div>
+        <div class="track">
+          <img src="song3.png" alt="Track">
+          <p>Track Title 3</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="profile.js"></script>
+</body>
+</html>

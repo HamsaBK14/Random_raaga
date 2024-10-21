@@ -1,0 +1,81 @@
+/* Simple login page styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black; /* Black background */
+  color: white;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Prevent scrolling due to animated elements */
+}
+
+.music-tone {
+  position: absolute;
+  border-radius: 50%;
+  background: white; /* White color for the music notes */
+  opacity: 0.8; /* Slight transparency */
+}
+
+@keyframes move {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(200px, 200px);
+  }
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0.8;
+  }
+  50% {
+      opacity: 0.2;
+  }
+  100% {
+      opacity: 0.8;
+  }
+}
+
+.login-container {
+  height: 400px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative; /* To contain the absolute positioning of the background */
+  z-index: 1; /* Ensure it sits above the background */
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background-color: #6a0dad; /* Purple button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #5c0b8a; /* Darker purple on hover */
+}
+
+
