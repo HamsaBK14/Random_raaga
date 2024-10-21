@@ -12,14 +12,17 @@ body {
 
 /* Navbar styling */
 .navbar {
+    position: fixed;
     background-color: #121212;
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     align-items: center;
+    width: 98%;
 }
 
 .logo {
+    margin-right: 970px;
     display: flex;
     align-items: center;
 }
@@ -44,7 +47,7 @@ body {
 /* Sidebar styling */
 .sidebar {
     position: fixed;
-    top: 60px;
+    top: 107px;
     left: 0;
     width: 200px;
     background-color: #181818;
